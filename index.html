@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="sv-FI">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Osterberg Rental | Österbotten</title>
+
+    <link rel="stylesheet" href="./styles.css" />
+    <script
+      src="https://kit.fontawesome.com/858655c6be.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./jquery.js" defer></script>
+    <script src="./script.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <h1>OSTERBERG</h1>
+        <p>RENTAL</p>
+      </div>
+
+      <nav>
+        <ul>
+          <li class="go-to-home">START</li>
+          <li class="go-to-scooters">SEA-DOO</li>
+          <li class="go-to-booking">BOKNING</li>
+          <li class="go-to-contact">KONTAKT</li>
+        </ul>
+      </nav>
+
+      <div class="menu-btn">
+        <div class="menu-btn-burger"></div>
+      </div>
+    </header>
+
+    <main>
+      <!--The first page / landing page-->
+      <section class="welcome">
+        <article class="welcome-text">
+          <h2>UTHYRES VATTENSKOTRAR I JAKOBSTAD</h2>
+          <p>Vi hyr ut vattenskotrar av kvalitet till hela Österbotten.</p>
+          <button class="booking-button">BOKA NU</button>
+        </article>
+      </section>
+
+      <!--Page that presents all scooters-->
+      <section class="scooter-section">
+        <h2>VATTENSKOTRAR TILL UTHYRNING</h2>
+        <div class="separator"></div>
+        <article class="scooter-showcase">
+          <div class="scooter-image">
+            <a href="https://www.sea-doo.com/fi/fi/" target="blank">
+              <div class="image-seadoo-logo">
+                <img
+                  src="./img/seadoo-logo.png"
+                  class="seadoo-logo"
+                  alt="seadoo logo"
+                />
+                <h3>TRIXX 2022</h3>
+              </div>
+            </a>
+            <img src="./img/trixx.png" class="scooter" alt="" />
+          </div>
+
+          <div class="scooter-image">
+            <a href="https://www.sea-doo.com/fi/fi/" target="blank">
+              <div class="image-seadoo-logo">
+                <img
+                  src="./img/seadoo-logo.png"
+                  class="seadoo-logo"
+                  alt="seadoo logo"
+                />
+                <h3>SPARK 2019</h3>
+              </div>
+            </a>
+            <img src="./img/spark.png" class="scooter" alt="" />
+          </div>
+        </article>
+
+        <!--Page that presents all scooterfeatures-->
+        <article class="scooter-features">
+          <div class="feature-box">
+            <h4>Bränslesnål</h4>
+            <i class="icon fas fa-gas-pump fa-2x"></i>
+            <p>
+              Trots skotrarnas kraft så är bränsleförbrukning ovanligt låg,
+              cirka 7-9 liter per timme.
+            </p>
+          </div>
+
+          <div class="feature-box">
+            <h4>Lätta att hantera</h4>
+            <i class="icon fas fa-map-marked-alt fa-2x"></i>
+            <p>
+              Våra skotrar har back samt en karta över sjön vilket gör det lätt
+              för alla att hantera skotern och navigera på sjön.
+            </p>
+          </div>
+
+          <div class="feature-box">
+            <h4>Smidig transport</h4>
+            <i class="icon fas fa-trailer fa-2x"></i>
+            <p>
+              Det medföljer en splitterny skotertrailer vilket gör transport och
+              ilastning enkel och snabb.
+            </p>
+          </div>
+
+          <div class="feature-box">
+            <h4>Acceleration</h4>
+            <i class="icon fas fa-tachometer-alt fa-2x"></i>
+            <p>
+              Båda skotrarna har en otrolig acceleration vilket gör dem riktigt
+              roliga motorfordon ute på sjön.
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <!--A section where you can book a scooter-->
+      <section class="booking-section">
+        <h2>BOKA EN SKOTER HÄR</h2>
+        <div class="separator"></div>
+        <article class="booking">
+          <p>Lägg till ett bokningssystem.</p>
+        </article>
+      </section>
+
+      <!--Section where you can contact the owners of the page-->
+      <section class="contact-section">
+        <h2>TA KONTAKT</h2>
+        <div class="separator"></div>
+        <article class="contact">
+          <div class="contact-info">
+            <img
+              src="./img/portrait.jpg"
+              alt="bild på kontaktperson"
+              id="contact-image"
+            />
+            <h3>Kevin Österberg</h3>
+            <p>044 3460299</p>
+            <p>kevin.osterberg@hotmail.com</p>
+            <p>Måsvägen 4, Jakobstad 68630</p>
+          </div>
+
+          <div class="contact-form">
+            <form action="./index.html">
+              <input
+                type="text"
+                class="forminput"
+                id="firstname"
+                name="firstname"
+                placeholder="Namn"
+              /><br />
+
+              <input
+                type="text"
+                class="forminput"
+                id="lastname"
+                name="lastname"
+                placeholder="E-mail"
+              /><br />
+
+              <input
+                type="text"
+                class="forminput"
+                id="phonenumber"
+                name="lastname"
+                placeholder="Telefon"
+              /><br />
+
+              <textarea
+                name="message"
+                class="forminput"
+                id="message"
+                cols="50"
+                rows="5"
+                placeholder="Meddelande"
+              ></textarea>
+            </form>
+            <button class="form-button">Skicka</button>
+            <p id="green">Tack för ditt meddelande! Vi svarar inom kort.</p>
+          </div>
+          <div class="contact-location">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28324.202365738736!2d22.649671472827276!3d63.66012123136963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468767bd2fa71f35%3A0x40146d63c75bb50!2sJakobstad!5e0!3m2!1sen!2sfi!4v1646003660865!5m2!1sen!2sfi"
+              id="location-map"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <!--Footer with social medias and copyrights-->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-nav">
+          <nav>
+            <ul>
+              <li class="go-to-home">START</li>
+              <li class="go-to-scooters">SEA-DOO</li>
+              <li class="go-to-booking">BOKNING</li>
+              <li class="go-to-contact">KONTAKT</li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="logo">
+          <h1>OSTERBERG</h1>
+          <p>RENTAL</p>
+        </div>
+
+        <div class="footer-socials">
+          <a href="https://www.instagram.com/" target="blank">
+            <img
+              src="./img/instagram64.png"
+              class="media-logo"
+              alt="instagram logo"
+            />
+          </a>
+          <a href="https://www.facebook.com/" target="blank">
+            <img
+              src="./img/facebook64.png"
+              class="media-logo"
+              alt="facebook logo"
+            />
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-copyright">
+        <p>© 2023 Österberg Rental. Alla rättigheter förbehållna.</p>
+      </div>
+    </footer>
+  </body>
+</html>
